@@ -1,0 +1,196 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --radius: 0.75rem;
+}
+
+html {
+  height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply text-foreground antialiased;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: linear-gradient(
+    135deg,
+    #F5F5DC 0%,
+    #FAFAFA 12%,
+    #F8F8F8 25%,
+    #F5F5DC 37%,
+    #FAFAFA 50%,
+    #F8F8F8 62%,
+    #F5F5DC 75%,
+    #FAFAFA 87%,
+    #F5F5DC 100%
+  );
+  background-attachment: fixed;
+  background-size: 200% 200%;
+  animation: subtleFlow 30s ease-in-out infinite;
+}
+
+@keyframes subtleFlow {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Glassmorphism global */
+.glass {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.glass-dark {
+  background: rgba(26, 26, 26, 0.25);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Efeitos premium */
+.premium-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.premium-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.glow-effect {
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+  transition: box-shadow 0.3s ease;
+}
+
+.glow-effect:hover {
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.5);
+}
+
+/* Animações premium */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-slide-up {
+  animation: slideInUp 0.6s ease-out;
+}
+
+.animate-fade-scale {
+  animation: fadeInScale 0.5s ease-out;
+}
+
+/* Sombras orgânicas e elegantes */
+.organic-shadow {
+  box-shadow: 
+    0 8px 20px -4px rgba(0, 0, 0, 0.06),
+    0 3px 8px -1px rgba(0, 0, 0, 0.03),
+    0 0 0 1px rgba(255, 255, 255, 0.08);
+  transition: all 0.5s ease;
+}
+
+.organic-shadow:hover {
+  box-shadow: 
+    0 12px 30px -4px rgba(0, 0, 0, 0.09),
+    0 5px 12px -1px rgba(0, 0, 0, 0.05),
+    0 0 0 1px rgba(255, 255, 255, 0.12);
+  transform: translateY(-2px);
+}
+
+.organic-shadow-image {
+  box-shadow: 
+    0 8px 20px -4px rgba(0, 0, 0, 0.06),
+    0 3px 8px -1px rgba(0, 0, 0, 0.03),
+    0 0 0 1px rgba(255, 255, 255, 0.08);
+  transition: all 0.5s ease;
+}
+
+.organic-shadow-image:hover {
+  box-shadow: 
+    0 12px 30px -4px rgba(0, 0, 0, 0.09),
+    0 5px 12px -1px rgba(0, 0, 0, 0.05),
+    0 0 0 1px rgba(255, 255, 255, 0.12);
+  transform: translateY(-2px);
+}
+* {
+  box-sizing: border-box;
+}
+
+.container-wide, .container-narrow {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Prevenir scroll horizontal em todas as seções */
+section {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Prevenir overflow em imagens e iframes */
+img, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Prevenir bounce no iOS */
+body {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: none;
+}
+
+/* Prevenir drag horizontal em dispositivos touch */
+* {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Permitir seleção de texto apenas em elementos específicos */
+p, span, div, h1, h2, h3, h4, h5, h6 {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+.container-narrow {
+  @apply max-w-4xl mx-auto px-4;
+}
+
+.container-wide {
+  @apply max-w-6xl mx-auto px-4;
+}
+

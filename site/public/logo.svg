@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A1A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="paw" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4AF37;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F4E4BC;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="32" fill="url(#bg)"/>
+  <!-- Paw print moderno -->
+  <circle cx="46" cy="36" r="6" fill="url(#paw)"/>
+  <circle cx="64" cy="28" r="5" fill="url(#paw)"/>
+  <circle cx="82" cy="36" r="6" fill="url(#paw)"/>
+  <circle cx="55" cy="54" r="6" fill="url(#paw)"/>
+  <ellipse cx="64" cy="70" rx="16" ry="10" fill="url(#paw)"/>
+  <!-- Coração moderno -->
+  <path d="M85 45c-2-3-5-3-7 0-2-3-5-3-7 0-3 3-3 8 0 11l7 7 7-7c3-3 3-8 0-11z" fill="#8B4513"/>
+</svg>
+
