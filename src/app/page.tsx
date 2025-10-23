@@ -75,7 +75,7 @@ export default function HomePage() {
         </section>
 
         {/* Serviços */}
-        <section id="servicos" className="py-20 md:py-28 relative">
+        <section id="servicos" className="py-20 md:py-28 relative mx-4">
           <div className="container-wide">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
