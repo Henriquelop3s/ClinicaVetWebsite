@@ -75,8 +75,8 @@ export default function HomePage() {
         </section>
 
         {/* Serviços */}
-        <section id="servicos" className="py-20 md:py-28 relative mx-4">
-          <div className="container-wide">
+        <section id="servicos" className="py-20 md:py-28 relative mx-4 overflow-hidden">
+          <div className="container-wide overflow-hidden">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -91,7 +91,7 @@ export default function HomePage() {
                 Soluções completas para a saúde e o cuidado do seu melhor amigo!
               </p>
             </motion.div>
-            <div className="mt-10 grid gap-6 md:grid-cols-3">
+            <div className="mt-10 grid gap-6 md:grid-cols-3 overflow-hidden">
               {[
                 { icon: Bath, title: "Banho & Tosa", desc: "Higiene premium com produtos de alta qualidade e técnicas especializadas." },
                 { icon: Stethoscope, title: "Consultas", desc: "Avaliação clínica completa com equipamentos modernos e carinho genuíno." },
@@ -106,7 +106,7 @@ export default function HomePage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: i * 0.1 }}
                   viewport={{ once: true }}
-                  className="premium-card rounded-2xl p-8 group cursor-pointer"
+                  className="premium-card rounded-2xl p-8 group cursor-pointer overflow-hidden"
                 >
                   <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-secondary to-secondary-light flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                     <s.icon className="w-8 h-8 text-white" />
