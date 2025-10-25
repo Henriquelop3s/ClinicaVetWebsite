@@ -75,23 +75,23 @@ export default function HomePage() {
         </section>
 
         {/* Serviços */}
-        <section id="servicos" className="py-20 md:py-28 relative mx-4 overflow-hidden">
-          <div className="container-wide overflow-hidden">
+        <section id="servicos" className="py-12 sm:py-16 md:py-20 lg:py-28 relative px-4 sm:px-6 overflow-visible">
+          <div className="container-wide overflow-visible mx-auto max-w-7xl">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
-              className="text-center mb-16"
+              className="text-center mb-12 sm:mb-16"
             >
-              <h2 className="font-serif text-5xl md:text-6xl font-bold text-primary mb-4">
+              <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-3 sm:mb-4 px-4">
                 Nossos <span className="text-secondary">Serviços</span>
               </h2>
-              <p className="text-xl text-muted max-w-2xl mx-auto">
+              <p className="text-base sm:text-lg md:text-xl text-muted max-w-2xl mx-auto px-4">
                 Soluções completas para a saúde e o cuidado do seu melhor amigo!
               </p>
             </motion.div>
-            <div className="mt-10 grid gap-6 md:grid-cols-3 overflow-hidden">
+            <div className="mt-8 sm:mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6 overflow-visible px-4 sm:px-4 md:px-4">
               {[
                 { icon: Bath, title: "Banho & Tosa", desc: "Higiene premium com produtos de alta qualidade e técnicas especializadas." },
                 { icon: Stethoscope, title: "Consultas", desc: "Avaliação clínica completa com equipamentos modernos e carinho genuíno." },
@@ -106,13 +106,13 @@ export default function HomePage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: i * 0.1 }}
                   viewport={{ once: true }}
-                  className="premium-card rounded-2xl p-8 group cursor-pointer overflow-hidden"
+                  className="premium-card rounded-xl sm:rounded-2xl p-5 sm:p-6 md:p-8 group cursor-pointer overflow-visible"
                 >
-                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-secondary to-secondary-light flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <s.icon className="w-8 h-8 text-white" />
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-xl sm:rounded-2xl bg-gradient-to-br from-secondary to-secondary-light flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <s.icon className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-primary mb-3">{s.title}</h3>
-                  <p className="text-muted leading-relaxed">{s.desc}</p>
+                  <h3 className="text-lg sm:text-xl font-bold text-primary mb-2 sm:mb-3">{s.title}</h3>
+                  <p className="text-sm sm:text-base text-muted leading-relaxed">{s.desc}</p>
                 </motion.div>
               ))}
             </div>
@@ -121,10 +121,10 @@ export default function HomePage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.8 }}
               viewport={{ once: true }}
-              className="mt-16 text-center"
+              className="mt-12 sm:mt-14 md:mt-16 text-center px-4"
             >
-                <Button as-child size="lg" className="bg-gradient-to-r from-secondary to-secondary-dark hover:from-secondary-dark hover:to-accent text-white font-bold text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-                  <a href="https://wa.me/351912345678?text=Olá%20gostaria%20de%20um%20orçamento%20para%20banho%20e%20tosa" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                <Button as-child size="lg" className="bg-gradient-to-r from-secondary to-secondary-dark hover:from-secondary-dark hover:to-accent text-white font-bold text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 w-full sm:w-auto">
+                  <a href="https://wa.me/351912345678?text=Olá%20gostaria%20de%20um%20orçamento%20para%20banho%20e%20tosa" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
                     💰 Solicitar Orçamento GRÁTIS
                   </a>
                 </Button>
