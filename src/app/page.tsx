@@ -75,8 +75,8 @@ export default function HomePage() {
         </section>
 
         {/* Serviços */}
-        <section id="servicos" className="py-12 sm:py-16 md:py-20 lg:py-28 relative px-4 sm:px-6 overflow-visible">
-          <div className="container-wide overflow-visible mx-auto max-w-7xl">
+        <section id="servicos" className="py-12 sm:py-16 md:py-20 lg:py-28 relative px-4 sm:px-6 overflow-x-hidden overflow-y-hidden">
+          <div className="container-wide overflow-x-hidden overflow-y-hidden mx-auto max-w-7xl">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -91,7 +91,7 @@ export default function HomePage() {
                 Soluções completas para a saúde e o cuidado do seu melhor amigo!
               </p>
             </motion.div>
-            <div className="mt-8 sm:mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6 overflow-visible px-4 sm:px-4 md:px-4">
+            <div className="mt-8 sm:mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6 overflow-x-hidden overflow-y-hidden px-4 sm:px-4 md:px-4">
               {[
                 { icon: Bath, title: "Banho & Tosa", desc: "Higiene premium com produtos de alta qualidade e técnicas especializadas." },
                 { icon: Stethoscope, title: "Consultas", desc: "Avaliação clínica completa com equipamentos modernos e carinho genuíno." },
@@ -106,7 +106,7 @@ export default function HomePage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: i * 0.1 }}
                   viewport={{ once: true }}
-                  className="premium-card rounded-xl sm:rounded-2xl p-5 sm:p-6 md:p-8 group cursor-pointer overflow-visible"
+                  className="premium-card rounded-xl sm:rounded-2xl p-5 sm:p-6 md:p-8 group cursor-pointer overflow-x-hidden overflow-y-hidden"
                 >
                   <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-xl sm:rounded-2xl bg-gradient-to-br from-secondary to-secondary-light flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
                     <s.icon className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" />
@@ -133,24 +133,24 @@ export default function HomePage() {
         </section>
 
         {/* Compromisso com o bem-estar */}
-        <section id="sobre" className="py-20 md:py-28 relative">
+        <section id="sobre" className="py-12 sm:py-16 md:py-20 lg:py-28 relative">
           <div className="container-narrow">
-            <div className="rounded-3xl p-12 text-center bg-white/80 backdrop-blur-sm border border-secondary/20 organic-shadow mx-4 my-4">
+            <div className="rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12 text-center bg-white/80 backdrop-blur-sm border border-secondary/20 organic-shadow mx-4 my-4">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
-                className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-r from-secondary to-secondary-light mb-6"
+                className="inline-flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full bg-gradient-to-r from-secondary to-secondary-light mb-4 sm:mb-6"
               >
-                <Heart className="w-8 h-8 text-white" />
+                <Heart className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" />
               </motion.div>
               <motion.h2
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
                 viewport={{ once: true }}
-                className="font-serif text-4xl md:text-5xl font-bold text-primary mb-6"
+                className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4 sm:mb-6 px-2"
               >
                 Compromisso com o bem-estar
               </motion.h2>
@@ -159,7 +159,7 @@ export default function HomePage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
                 viewport={{ once: true }}
-                className="text-lg text-muted max-w-3xl mx-auto leading-relaxed"
+                className="text-sm sm:text-base md:text-lg text-muted max-w-3xl mx-auto leading-relaxed px-2"
               >
                 Oferecemos uma experiência premium com atendimento acolhedor, tecnologia de ponta e protocolos de segurança rigorosos. Cada animal de estimação recebe cuidado individualizado com amor e profissionalismo.
               </motion.p>
@@ -168,20 +168,20 @@ export default function HomePage() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
                 viewport={{ once: true }}
-                className="mt-8 flex justify-center gap-8 text-sm"
+                className="mt-6 sm:mt-8 grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-2 md:gap-4 text-xs sm:text-sm"
               >
-                <div className="flex items-center gap-2 text-primary">
-                  <div className="w-2 h-2 rounded-full bg-secondary"></div>
-                  Tecnologia Avançada
+                <div className="flex items-center justify-center sm:justify-start gap-1.5 sm:gap-2 text-primary">
+                  <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-secondary flex-shrink-0"></div>
+                  <span>Tecnologia Avançada</span>
                 </div>
-                <div className="flex items-center gap-2 text-primary">
-                  <div className="w-2 h-2 rounded-full bg-secondary"></div>
-                  Atendimento Humanizado
+                <div className="flex items-center justify-center sm:justify-start gap-1.5 sm:gap-2 text-primary">
+                  <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-secondary flex-shrink-0"></div>
+                  <span>Atendimento Humanizado</span>
                 </div>
-                    <div className="flex items-center gap-2 text-primary">
-                      <div className="w-2 h-2 rounded-full bg-secondary"></div>
-                      Equipa Especializada
-                    </div>
+                <div className="flex items-center justify-center sm:justify-start gap-1.5 sm:gap-2 text-primary">
+                  <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-secondary flex-shrink-0"></div>
+                  <span>Equipa Especializada</span>
+                </div>
               </motion.div>
             </div>
           </div>
@@ -267,7 +267,7 @@ export default function HomePage() {
             <div>
               <h2 className="font-serif text-3xl">📍 Onde estamos</h2>
               <p className="text-muted mt-2">Rua Augusta, 1000 - Lisboa, Portugal</p>
-              <div className="mt-4 aspect-[4/3] overflow-hidden rounded-xl">
+              <div className="mt-4 h-[450px] sm:h-[550px] md:h-[650px] lg:h-[750px] overflow-hidden rounded-xl">
                 <iframe
                   title="Mapa"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.1234567890!2d-9.1384!3d38.7223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1933a6c9c8c8c8%3A0x1234567890abcdef!2sRua%20Augusta%2C%20Lisboa%2C%20Portugal!5e0!3m2!1spt-PT!2spt!4v1700000000000!5m2!1spt-PT!2spt"
