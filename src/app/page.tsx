@@ -12,7 +12,7 @@ export default function HomePage() {
       <Header />
       <main className="flex-1 overflow-x-hidden w-full">
         {/* Hero */}
-        <section className="pt-24 pb-20 md:pt-32 md:pb-24 relative overflow-hidden">
+        <section className="pt-32 pb-20 md:pt-40 md:pb-24 relative overflow-hidden">
           <div className="container-wide grid gap-10 md:grid-cols-2 md:items-center">
             <div>
               <motion.h1
