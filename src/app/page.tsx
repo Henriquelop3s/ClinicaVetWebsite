@@ -262,18 +262,19 @@ export default function HomePage() {
         </section>
 
         {/* Localização e Contato */}
-        <section id="contato" className="py-16 md:py-20 relative">
-          <div className="container-wide grid gap-8 md:grid-cols-2">
+        <section id="contato" className="pt-16 md:pt-20 pb-4 md:pb-6 relative">
+          <div className="container-wide grid gap-20 md:grid-cols-2">
             <div>
               <h2 className="font-serif text-3xl">📍 Onde estamos</h2>
-              <p className="text-muted mt-2">Rua Augusta, 1000 - Lisboa, Portugal</p>
-              <div className="mt-4 h-[450px] sm:h-[550px] md:h-[650px] lg:h-[750px] overflow-hidden rounded-xl">
+              <p className="text-muted mt-2 mb-0">Rua Augusta, 1000 - Lisboa, Portugal</p>
+              <div className="w-full rounded-xl overflow-hidden min-h-[460px] sm:min-h-[512px] md:min-h-[560px] lg:min-h-[610px]">
                 <iframe
                   title="Mapa"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.1234567890!2d-9.1384!3d38.7223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1933a6c9c8c8c8%3A0x1234567890abcdef!2sRua%20Augusta%2C%20Lisboa%2C%20Portugal!5e0!3m2!1spt-PT!2spt!4v1700000000000!5m2!1spt-PT!2spt"
                   width="100%"
                   height="100%"
-                  style={{ border: 0 }}
+                  className="min-h-[460px] sm:min-h-[512px] md:min-h-[560px] lg:min-h-[610px]"
+                  style={{ border: 0, display: 'block' }}
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 />
